@@ -31,3 +31,20 @@ All the gory details live in the repo so you can **clone, run, and hack away**.
 | **Slave 5 – Indicators**      | 3-LED status cluster (green / yellow / red). |
 | **Slave 6 – Random**          | LFSR-based RNG for word selection.           |
 | **Slave 7 – Keyboard**        | 33-key RU-layout matrix → IRQ 5.             |
+
+---
+
+## 🗺️ Memory map
+
+| Address range     | Size   | Slave               | Notes          |
+| ----------------- | ------ | ------------------- | -------------- |
+| `0x0000 – 0xFEFF` | 0xFF00 | **RAM**             | Code + data    |
+| `0xFF46`          | 1 word | **Terminal**        | R/W            |
+| `0xFF48`          | 1 word | **Indicators**      | W              |
+| `0xFF4A`          | 1 word | **Random**          | R              |
+| `0xFF4C`          | 1 word | **Keyboard**        | R (clears IRQ) |
+| `0xFF4E`          | 1 word | **RulesController** | W              |
+| `0xFF50 – 0xFF7F` | 0x30   | **SubDisplay**      | W              |
+| `0xFF80 – 0xFFFF` | 0x80   | **MainDisplay**     | W              |
+
+All peripherals are memory-mapped; **no special I/O instructions required**.
