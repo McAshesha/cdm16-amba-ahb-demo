@@ -48,3 +48,16 @@ All the gory details live in the repo so you can **clone, run, and hack away**.
 | `0xFF80 – 0xFFFF` | 0x80   | **MainDisplay**     | W              |
 
 All peripherals are memory-mapped; **no special I/O instructions required**.
+
+---
+
+## 🔔 Interrupts
+
+| Vector | Source           | Purpose            |
+| ------ | ---------------- | ------------------ |
+| 0      | **Reset / Main** | Program entry      |
+| 1–4    | *Reserved*       | Fault traps        |
+| **5**  | **Keyboard**     | User keypress      |
+| 6–15   | *Available*      | Extend as you like |
+
+Enable interrupts in the status register and you're good. ⚡
