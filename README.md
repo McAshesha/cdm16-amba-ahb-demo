@@ -61,3 +61,12 @@ All peripherals are memory-mapped; **no special I/O instructions required**.
 | 6–15   | *Available*      | Extend as you like |
 
 Enable interrupts in the status register and you're good. ⚡
+
+---
+
+## 🎮 Demo application — Hangman 🪢
+
+* 256 Russian 6-letter words, LZ-packed in ROM.
+* RNG picks a secret word, game logic lives in `src/asm/main.asm`.
+* Display updates use double-buffer & freeze-refresh via RulesController.
+* No external dependencies beyond the supplied JAR plugins.
