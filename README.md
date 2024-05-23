@@ -32,6 +32,16 @@ All the gory details live in the repo so you can **clone, run, and hack away**.
 | **Slave 6 – Random**          | LFSR-based RNG for word selection.           |
 | **Slave 7 – Keyboard**        | 33-key RU-layout matrix → IRQ 5.             |
 
+<br/>
+
+<div align="center">
+
+<img src="screenshots/top-module.jpg" alt="Top-level module" width="400"/>
+
+<img src="screenshots/master.jpg" alt="Master CdM16 schematic" width="500"/>
+
+</div>
+
 ---
 
 ## 🗺️ Memory map
