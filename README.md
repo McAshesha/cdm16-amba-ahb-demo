@@ -40,6 +40,10 @@ All the gory details live in the repo so you can **clone, run, and hack away**.
 
 <img src="screenshots/master.jpg" alt="Master CdM16 schematic" width="500"/>
 
+<img src="screenshots/slave-maindisplay.jpg" alt="Main display slave" width="500"/>
+
+<img src="screenshots/interconnect.jpg" alt="Interconnect block" width="500"/>
+
 </div>
 
 ---
