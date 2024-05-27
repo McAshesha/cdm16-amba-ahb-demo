@@ -80,6 +80,10 @@ Enable interrupts in the status register and you're good. ⚡
 
 ## 🎮 Demo application — Hangman 🪢
 
+| Win                                          | Lose                                          |
+| -------------------------------------------- | --------------------------------------------- |
+| <img src="screenshots/win.gif" width="320"/> | <img src="screenshots/lose.gif" width="320"/> |
+
 * 256 Russian 6-letter words, LZ-packed in ROM.
 * RNG picks a secret word, game logic lives in `src/asm/main.asm`.
 * Display updates use double-buffer & freeze-refresh via RulesController.
