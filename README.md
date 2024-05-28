@@ -88,3 +88,40 @@ Enable interrupts in the status register and you're good. ⚡
 * RNG picks a secret word, game logic lives in `src/asm/main.asm`.
 * Display updates use double-buffer & freeze-refresh via RulesController.
 * No external dependencies beyond the supplied JAR plugins.
+
+---
+
+## 🚀 Getting started
+
+### 0. Prerequisites
+
+| Tool                      | Tested version | Notes                                                                                  |
+| ------------------------- | -------------- | -------------------------------------------------------------------------------------- |
+| **Logisim**               | `3.8.0`        | [https://sourceforge.net/projects/circuit/](https://sourceforge.net/projects/circuit/) |
+| **logisim-cdm-emulator**  | `0.2.2`        | in `lib/`                                                                              |
+| **logisim-banked-memory** | `0.2.2`        | in `lib/`                                                                              |
+| **logisim-debugger**      | `0.2.2`        | in `lib/`                                                                              |
+| **cdm-assembler**         | any            | we use the uni-supplied one                                                            |
+
+### 🐑 1. Clone
+
+```bash
+git clone https://github.com/your-user/cdm16-amba-ahb-demo.git
+cd cdm16-amba-ahb-demo
+```
+
+### 🛠️ 2. Assemble the demo program
+
+```bash
+cd src/asm
+cocos main.asm        # → build/out.img
+```
+
+### 🏃 3. Launch the simulation
+
+```bash
+logisim src/logisim/main.circ
+```
+
+Hit **🟥 Reset**, then **▶️ Run**.
+Type any Russian letter on the on-screen keyboard — IRQ 5 will fire and the game begins.
