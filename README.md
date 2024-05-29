@@ -125,3 +125,20 @@ logisim src/logisim/main.circ
 
 Hit **🟥 Reset**, then **▶️ Run**.
 Type any Russian letter on the on-screen keyboard — IRQ 5 will fire and the game begins.
+
+---
+
+## 🗂️ Project layout
+
+```text
+cdm16-amba-ahb-demo/
+├── lib/                  # custom Logisim libraries (JARs)
+├── src/
+│   ├── asm/              # CdM16 assembly
+│   │   ├── build/        # compiled images
+│   │   └── main.asm
+│   └── logisim/          # schematics
+│       ├── cdm16.circ    # CPU core (read-only)
+│       └── main.circ     # top-level project file
+└── README.md             # you're reading it
+```
