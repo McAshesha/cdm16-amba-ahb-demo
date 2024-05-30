@@ -142,3 +142,10 @@ cdm16-amba-ahb-demo/
 │       └── main.circ     # top-level project file
 └── README.md             # you're reading it
 ```
+
+---
+
+## 📄 License
+
+This repository is released under the **GNU License**.
+See [`LICENSE`](LICENSE) for the full text.
