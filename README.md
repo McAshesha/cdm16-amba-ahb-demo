@@ -169,11 +169,4 @@ cdm16-amba-ahb-demo/
 
 ---
 
-<h2 id="license">📄 License </h2>
-
-This repository is released under the **GNU License**.
-See [`LICENSE`](LICENSE) for the full text.
-
----
-
 > *Feel free to open issues, PRs, or just ping me on Telegram if you build something cool on top of this platform!* 💬
